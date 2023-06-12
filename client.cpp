@@ -2,8 +2,6 @@
 #include <sstream>
 #include <string>
 #include <cstdlib>
-// Client side C/C++ program to demonstrate Socket
-// programming
 #include <arpa/inet.h>
 #include <stdio.h>
 #include <string.h>
@@ -67,6 +65,7 @@ int main(int argc, char const* argv[])
                 if (count > 0){
                     cout << "Wrong input. You have " << 3 - count << " more tries" <<endl; 
                 }
+                cout << "-------------------" << endl; 
                 cout << "Welcome our customer" << endl;
                 cout << "1. Create account" << endl;
                 cout << "2. Log in" << endl;
@@ -180,6 +179,7 @@ int main(int argc, char const* argv[])
                 cout << message_server << "LOGGED IN!" << endl;
                 int sw=0;
                 while(option != 6){
+                    cout << "-----------------" << endl;
                     cout <<"Please choose one of the following:"<< endl;
                     cout << "1. Make transaction" << endl;
                     cout << "2. Update account" << endl;
